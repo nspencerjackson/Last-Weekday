@@ -6,10 +6,10 @@ months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 def lastDay(inMonth, inYear):
     for i in range(months[inMonth - 1]):
         temp = date(int(inYear), inMonth, (i + 1)).weekday()
-        print("date: ", date(int(inYear), inMonth, (i+1)), ", which is: ", temp)
+        #print("date: ", date(int(inYear), inMonth, (i+1)), ", which is: ", temp)
         if temp < 5:
             friday = i + 1
-            print("Friday: ", friday)
+            #print("Friday: ", friday)
     return friday
 
 # Function to find previous work weekday
