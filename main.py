@@ -17,9 +17,11 @@ if x.day == 1:
     # Checks if it is the first day of a new year (make this a function)
     if x.month == 1:
         ls = checkYear(int(m), int(day), y)
+    # Else not the first month
     else:
         lastMonth = x.month - 1
         prev = lastDay(lastMonth, y)
+# else not the first day of the month
 elif x.day > 1:
     if x.month == 1:
         lastYearDate = checkYear(int(m), int(day), y)
