@@ -14,6 +14,7 @@ y = input()
 # makes x today's date
 x = date(int(y), int(m), int(day))
 
+import pdb; pdb.set_trace()
 # Checks if today is the first of the month
 if x.day == 1:
     # Checks if it is the first day of a new year (make this a function)
